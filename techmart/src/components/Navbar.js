@@ -1,23 +1,26 @@
 import React from 'react';
 import {  Link } from "react-router-dom";
+
 const navbar= () =>{
   return (
-  <div className='nav'>
-    <li>
-      <Link to="/signup">sign-up</Link>
-    </li>
+  <nav className='nav'>
     <span className='logo'>ⓉⒺⒸⒽⓂⒶⓇⓉ</span>
     <input id="search" type="text" placeholder='search' />
     <li>
-      <Link to="/signin">sign-in</Link>
+      <Link to="/signup">signup</Link>
+    </li>
+ 
+    
+    <li>
+      <Link to="/signin">signin</Link>
     </li>
     <li>
-      <Link to="/product">product</Link>
+      <Link to="/products">products</Link>
     </li>
     <li>
       <Link to="/">menu</Link>
     </li>
-  </div>
+  </nav>
   );
 }
 export default navbar;
