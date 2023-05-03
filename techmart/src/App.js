@@ -6,6 +6,7 @@ import products from "./components/products"
 import signin from "./components/signin"
 import signup  from "./components/singup"
 import Footer from './Footer';
+import BannerCard from './BannerCard';
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
         <Route path='/signin' component={signin} />
         <Route path='/singup' component={signup} />
       </Routes>
+      <BannerCard />
       <Footer />
+      
     </Router>
   );
 }
