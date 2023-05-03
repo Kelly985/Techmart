@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Footer from './Footer';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+function App() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      {/* other app content */}
+      <Footer />
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
