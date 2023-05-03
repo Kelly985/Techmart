@@ -12,15 +12,16 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <BannerCard />
       <Routes>
         <Route path='/' exact component={menu} />
         <Route path='/products' component={products} />
         <Route path='/signin' component={signin} />
         <Route path='/singup' component={signup} />
       </Routes>
-      <BannerCard />
-      <Footer />
       
+      <Footer />
+    
     </Router>
   );
 }
