@@ -60,7 +60,7 @@ li{
 }
 
 .logo{
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .nav #search{
@@ -68,12 +68,47 @@ li{
   padding: 6px;
   border: none;
   margin-top: 2px;
-  margin-left: 480px;
+  margin-left: 15%;
   font-size: 30px;
-  width: 500px;
+  width: 450px;
   height: 40px;
   border-radius: 2rem;
 
+}
+
+.comp{
+  text-align: center;
+  color: black;
+}
+
+.electrons {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  height:680px;
+}
+.electrons img {
+  max-width: 100%;
+  height:300px;
+  margin-bottom: 10px;
+}
+.electrons button {
+  margin-top: 10px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+.electrons button:hover {
+  background-color: #4CA724;
 }
 /* Footer Container */
 .footer-container {
@@ -83,7 +118,7 @@ li{
   padding: 50px 80px;
   background-color: #333;
   color: #fff;
-  margin-top: 10000px;
+  /* margin-top: 100px; */
 }
 
 /* Footer Column */
@@ -169,5 +204,77 @@ a:hover {
   flex-direction: column;
   margin-top: 100%;
 }
+.alt-login {
+  width: 80%;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+}
 
+.alt-login div {
+  width: 45%;
+  height: 100%;
+  border-radius: 0.25em;
+  background-color:gray;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.google {
+  background-image: url(https://shorturl.at/ekEMT);}
+.Facebook {
+      background-image: url(https://shorturl.at/jnoKV);}
+
+input {
+  border: none;
+  background-color: aliceblue;
+  height: 4em;
+  width: 80%;
+  border-radius: 0.25em;
+  text-align: center;
+  padding: 2em;
+}
+input:focus {
+  outline-color: aquamarine;
+}
+.login-btn {
+  width: 40%;
+  height: 3em;background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+.login-btn:hover { transform: scale(1.25);}
+
+.text {
+  position: relative;
+  bottom: 2em;
+}
+
+.hide {
+  position: absolute;
+  transform:scale(0);
+
+}
+
+.login-popup {
+  position: absolute;
+  height: 30em;
+  width: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.25em;
+  background-color: black;
+  color: greenyellow;
+  bottom: 0;
+  transform:scale(1);
+  transition: 1.5s;
+
+}
 
