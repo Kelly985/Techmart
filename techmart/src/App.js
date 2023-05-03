@@ -6,14 +6,16 @@ import Products from "./components/products"
 import Signin from "./components/signin"
 import Signup  from "./components/singup"
 import Footer from './Footer';
-import BannerCard from './BannerCard';
+import Electronics from './components/ElectronicsList';
+import Loginform from './components/Loginform';
+import BannerCard from './components/BannerCard';
 
 function App() {
   return (
     <Router>
       <Navbar />
       <BannerCard />
-      {/* <Loginform /> */}
+      <Loginform />
       <Electronics />
       <Routes>
         <Route path='/' element ={<Menu /> } />
@@ -22,6 +24,7 @@ function App() {
         <Route path='/singup' element ={<Signup /> } />
         <Route path='/menu/electronics' element ={<Electronics />} />
       </Routes>
+      
       <Footer />
       
     </Router>
