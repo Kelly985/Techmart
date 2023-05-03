@@ -1,12 +1,13 @@
 import React from 'react';
-import Loginform from './Loginform';
+import SignupForm from './SignupForm';
+
 
 const signup = () =>{
   return (
     <div>
       <h3>sing_up hear</h3>
       <div>
-    {<Loginform /> }
+   {<SignupForm />}
       </div>
     </div>
   );
