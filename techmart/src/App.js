@@ -6,14 +6,14 @@ import Products from "./components/products"
 import Signin from "./components/signin"
 import Signup  from "./components/singup"
 import Footer from './Footer';
-import Electronics from './components/ElectronicsList';
-import Loginform from './components/Loginform';
+import BannerCard from './BannerCard';
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Loginform />
+      <BannerCard />
+      {/* <Loginform /> */}
       <Electronics />
       <Routes>
         <Route path='/' element ={<Menu /> } />
@@ -23,6 +23,7 @@ function App() {
         <Route path='/menu/electronics' element ={<Electronics />} />
       </Routes>
       <Footer />
+      
     </Router>
   );
 }

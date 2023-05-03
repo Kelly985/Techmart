@@ -211,70 +211,53 @@ a:hover {
   justify-content: center;
 }
 
-.alt-login div {
-  width: 45%;
-  height: 100%;
-  border-radius: 0.25em;
-  background-color:gray;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
+.banner-card {
+  background-color: rgb(255, 60, 0);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 100px;
 }
-.google {
-  background-image: url(https://shorturl.at/ekEMT);}
-.Facebook {
-      background-image: url(https://shorturl.at/jnoKV);}
 
-input {
-  border: none;
-  background-color: aliceblue;
-  height: 4em;
-  width: 80%;
-  border-radius: 0.25em;
+.banner-card-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
   text-align: center;
-  padding: 2em;
-}
-input:focus {
-  outline-color: aquamarine;
-}
-.login-btn {
-  width: 40%;
-  height: 3em;background-color: aquamarine;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  border-radius: 0.25em;
-  cursor: pointer;
 }
 
-.login-btn:hover { transform: scale(1.25);}
-
-.text {
-  position: relative;
-  bottom: 2em;
+.banner-card-paragraph {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.hide {
-  position: absolute;
-  transform:scale(0);
-
-}
-
-.login-popup {
-  position: absolute;
-  height: 30em;
-  width: 30em;
+.banner-card-buttons-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 0.25em;
-  background-color: black;
-  color: greenyellow;
-  bottom: 0;
-  transform:scale(1);
-  transition: 1.5s;
-
 }
 
+.banner-card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.banner-card-buttons button {
+  background-color: white;
+  color: orange;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.banner-card-buttons button:hover {
+  background-color: burlywood;
+  color: grey;
+}
