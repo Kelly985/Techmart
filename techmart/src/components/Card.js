@@ -25,7 +25,7 @@ const Card = () => {
       effect: 'fade',
     },
     {
-      src: '',
+      src: 'https://th.bing.com/th/id/OIP.whb1ydm2xQip6SaDch5m3wHaFT?pid=ImgDet&rs=1',
       effect: 'shake',
     },
     {
@@ -107,7 +107,7 @@ const Card = () => {
   };
   return (
     <div className="card">
-      <h2>Welcome to our online store! Get ready to discover the best deals on the web.</h2>
+      {/* <h2>Welcome to our online store! Get ready to discover the best deals on the web.</h2> */}
       <div className="card-image-container">
         {images.map((image, index) => (
           <img
@@ -119,7 +119,7 @@ const Card = () => {
         ))}
       </div>
       <div className="card-text">
-        <h2 className="card-title">Techmart online store</h2>
+        {/* <h2 className="card-title">Techmart online store</h2> */}
         <p className="card-description">
         </p>
         <a href="#" className="card-link">

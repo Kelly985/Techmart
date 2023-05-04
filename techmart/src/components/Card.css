@@ -9,9 +9,11 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    margin-top: 1px;
+    width: 100%;
   }
   .card-image {
-    width: calc(100% / 5);
+    width: calc(100% / 6);
     height: auto;
     margin: 0 0.5rem;
     transition: transform 0.5s, filter 0.5s, opacity 0.5s;

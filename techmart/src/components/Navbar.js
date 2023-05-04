@@ -8,7 +8,7 @@ const Navbar= () =>{
   return (
   <nav className='nav'>
     <span className='logo'>ⓉⒺⒸⒽⓂⒶⓇⓉ</span>
-    <input id="search" onChange={(e)=>setFind(e.target.value)}  type="text" placeholder='search' />
+    {/* <input id="search" onChange={(e)=>setFind(e.target.value)}  type="text" placeholder='search' /> */}
     <li>
       <Link to="/signup">signup</Link>
     </li>

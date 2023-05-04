@@ -42,12 +42,13 @@ h1{
 }
 .nav{
   width: 100%;
-  background-color:rgb(228, 224, 224);
+  background-color:#000000;
   height: 100px;
 }
 
-li{
+.nav li{
   /* text-transform: uppercase; */
+  color: #000000;
   text-decoration: none;
   float: right;
   display:flex;
@@ -57,14 +58,17 @@ li{
   text-align:center;
   margin-top: 35px;
   font-family: Arial, sans-serif;
+ 
 }
 
 .logo{
   font-size: 50px;
+  color:#ceeffe
 }
 
 .nav #search{
   /* float: right; */
+  background-color: #282c34;
   padding: 6px;
   border: none;
   margin-top: 2px;
@@ -218,7 +222,7 @@ a:hover {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  margin-top: 100px;
+  /* margin-top: 10px; */
 }
 
 .banner-card-header {
@@ -379,7 +383,7 @@ input:focus {
 
 /*  order */
 .order {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 .order .container {
   padding: 30px 10px;
@@ -438,7 +442,14 @@ input:focus {
   font-weight: 600;
   font-size:15px;
 }
-
+#checkout{
+  background-color:#d1d4dc;
+  width:70px;
+  height:40px;
+  margin-left:50%;
+  border-color: #008CBA;
+  border-radius: 1rem;
+}
 #cart1{
   background-color:#d1d4dc;
 width:70px;
@@ -457,7 +468,7 @@ border-radius: 1rem;
 .carousel {
   width: 100%;
   overflow: hidden;
-  padding: 60px 0;
+  padding: 60px 10;
 }
 /* here */
 carousel:before {
@@ -489,6 +500,11 @@ carousel:before {
   display: flex;
   align-items: center;
   animation: scroll 8s linear infinite;
+  /* -webkit-animation: scroll-left 2s linear infinite; */
+  /* animation: scroll-left 20s linear infinite; */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
 }
 .carousel-item {
   display: inline-block;
@@ -526,4 +542,16 @@ left: 0;
 }
 .carousel-container::after {
 right: 0;
+}
+
+.sidebar {
+  background-color: rgb(64, 57, 57);
+  color: red;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  width: 300px;
+  z-index: 1000;
 }

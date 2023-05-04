@@ -10,7 +10,7 @@ function Cart({ cartItems, onClick, onRemove }) {
   };
   return (
     <div>
-      <button onClick={onClick}>Cart ({cartItems.length})</button>
+      <button  id="cart1" onClick={onClick}>Cart ({cartItems.length})</button>
       {cartItems.length > 0 && (
         <div>
           <h2>Cart</h2>
@@ -22,13 +22,13 @@ function Cart({ cartItems, onClick, onRemove }) {
                 <p>Description: {item.description}</p>
                 <p>Price: {item.price_ksh}</p>
                 <p>Category: {item.category}</p>
-                <p>Condition: {item.condition}</p>
+                <p>Condition: {item.condition}</p><br></br>
                 <button onClick={() => handleRemoveClick(item)}>Remove</button>
               </div>
             ))}
           </ul>
-          <button onClick={handleCheckoutClick}>Checkout</button>
-          {total > 0 && <p>Total: {total} KSH</p>}
+          <button  id="checkout" onClick={handleCheckoutClick}>Checkout</button>
+          {total > 0 && <p> Total: price_ksh  {total} </p>}
         </div>
       )}
     </div>

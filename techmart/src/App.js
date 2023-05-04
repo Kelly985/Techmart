@@ -6,12 +6,9 @@ import Products from "./components/products"
 import Signin from "./components/signin"
 import Signup  from "./components/singup"
 import Footer from './Footer';
-// import Electronics from './components/ElectronicsList';
-// import Loginform from './components/Loginform';
-import BannerCard from './components/BannerCard';
-import { Order } from './components/Order';
-import Carousel  from './components/Carousel';
-import Card from './components/Card';
+import CategoryFilter from './components/Category';
+// import Sidebar from './components/SideBar';
+
 
 
 
@@ -19,19 +16,16 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Carousel />
-      <Card />
-      <BannerCard />
-      <Order />
-      
-      {/* <Loginform /> */}
-      {/* <Electronics /> */}
+      {/* <Sidebar /> */}
+    
+    
       <Routes>
         <Route path='/' element ={<Menu /> } />
         <Route path='/products' element={<Products />} />
+        <Route path='/category' element={<CategoryFilter />} />
         <Route path='/signin' element ={<Signin />} />
         <Route path='/signup' element ={<Signup /> } />
-        {/* <Route path='/menu/electronics' element ={<Electronics />} /> */}
+      
       </Routes>
       
       <Footer />

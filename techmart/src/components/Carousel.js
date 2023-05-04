@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { Outlet } from "react-router-dom"
 
 const brandTexts = [
   'Huawei',
@@ -29,6 +30,7 @@ const brandTexts = [
   'HTC',
   'Vivo'
 ];
+
 function Carousel() {
   const [offset, setOffset] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
@@ -72,6 +74,7 @@ function Carousel() {
           </div>
         ))}
       </div>
+      <Outlet />
     </div>
   );
 }
