@@ -4,7 +4,7 @@ import React from "react";
 function Cart({ cartItems, onClick }) {
     return (
         <div>
-            <button onClick={onClick}>Cart ({cartItems.length})</button>
+            <button id="cart1" onClick={onClick}>Cart ({cartItems.length})</button>
             {cartItems.length > 0 && (
                 <div>
                     <h2>Cart</h2>

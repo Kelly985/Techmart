@@ -37,7 +37,7 @@ function ElectronicsList(){
                     <p>Description: {item.description}</p>
                     <p>Price: {item.price_ksh}</p>
                     <p>Category: {item.category}</p>
-                    <p>Condition: {item.condition}</p>
+                    <p>Condition: {item.condition}</p><br></br>
                     <button onClick={() => addToCart(item)}>Add to Cart</button>
                 </div>
             ))}

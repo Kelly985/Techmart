@@ -9,8 +9,8 @@ function SearchBar({ onSearch }) {
     };
     return (
         <form onSubmit={handleSearch}>
-            <input type="text" placeholder="Search by name" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
-            <button type="submit">Search</button>
+            <input id='query' type="text" placeholder="Search by name" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+            <button className="submit"type="submit">Search</button>
         </form>
     );
 }

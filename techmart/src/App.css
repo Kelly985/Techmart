@@ -417,5 +417,33 @@ input:focus {
 
 .order .box,p{
   display: inline-flex;
-  display-direction: row;
+
+}
+
+.submit{
+  background-color: #ceeffe;
+  width:80px;
+  height:50px;
+  border-radius: 2rem;
+  border: #222;
+  font-weight: 600;
+  font-size: 20px;
+}
+#query{
+  width:40%;
+  margin-left: 30%;
+  background-color: #d1d4dc;
+  border: #222;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size:15px;
+}
+
+#cart1{
+  background-color:#d1d4dc;
+width:70px;
+height:40px;
+margin-left:50%;
+border-color: #008CBA;
+border-radius: 1rem;
 }
