@@ -10,13 +10,20 @@ import Footer from './Footer';
 // import Loginform from './components/Loginform';
 import BannerCard from './components/BannerCard';
 import { Order } from './components/Order';
+import Carousel  from './components/Carousel';
+import Card from './components/Card';
+
+
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <Carousel />
+      <Card />
       <BannerCard />
       <Order />
+      
       {/* <Loginform /> */}
       {/* <Electronics /> */}
       <Routes>

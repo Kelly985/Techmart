@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SearchBar from './SearchBar';
 import Cart from './Cart';
-
-
 function ElectronicsList(){
     const [electronics, setElectronics] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
@@ -25,6 +23,12 @@ function ElectronicsList(){
     const handleSearch = (query) => {
         setSearchQuery(query);
     };
+    const removeItem = (item) => {
+        setCart((prevCart) => ({
+            count: prevCart.count - 1,
+            items: prevCart.items.filter((cartItem) => cartItem.id !== item.id),
+        }));
+    };
     const filteredElectronics = electronics.filter((item) => item.name.toLowerCase().includes(searchQuery.toLowerCase()));
     return (
         <div>
@@ -41,7 +45,7 @@ function ElectronicsList(){
                     <button onClick={() => addToCart(item)}>Add to Cart</button>
                 </div>
             ))}
-            <Cart cartItems={cart.items} onClick={viewCart} />
+            <Cart cartItems={cart.items} onClick={viewCart} onRemove={removeItem} />
         </div>
     );
 }
