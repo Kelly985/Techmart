@@ -9,12 +9,14 @@ import Footer from './Footer';
 // import Electronics from './components/ElectronicsList';
 // import Loginform from './components/Loginform';
 import BannerCard from './components/BannerCard';
+import { Order } from './components/Order';
 
 function App() {
   return (
     <Router>
       <Navbar />
       <BannerCard />
+      <Order />
       {/* <Loginform /> */}
       {/* <Electronics /> */}
       <Routes>
