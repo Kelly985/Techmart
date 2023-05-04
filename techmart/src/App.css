@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -40,6 +41,27 @@
 h1{
   font-display: center;
 }
+
+h2{
+  
+  margin-left: 5%;
+}
+
+#label{
+  font-size: 25px;
+  text-align: center;
+  margin-left: 70%;
+}
+
+#category{
+  width: 20%;
+  height: 30px;
+  border:#000000;
+  font-size: 23px;
+  background-color: #ccc;
+  
+}
+
 .nav{
   width: 100%;
   background-color:#000000;
@@ -84,19 +106,24 @@ h1{
   text-align: center;
   color: black;
 }
-
+.panga{
+  padding-left: 30px;
+  margin:20px;
+ 
+}
 .electrons {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  margin: 10px;
-  width: 300px;
-  display: inline-block;
+  margin: 8px;
+  width:18%;
+  display: inline-table;
   vertical-align: top;
   text-align: center;
-  height:600px;
+  height:550px;
 }
+
 
 .electrons img {
   max-width: 100%;
@@ -108,13 +135,31 @@ h1{
   background-color: #008CBA;
   color: white;
   border: none;
-  border-radius: 5px;
+  box-shadow: #000000;
+  border-radius: 8px;
   padding: 8px;
   cursor: pointer;
 }
 .electrons button:hover {
   background-color: #4CA724;
 }
+
+.footer{
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: white;
+transform: all 0.5s ease;
+}
+.footer-col ul li a:hover {
+color: orange;
+padding-left: 10px;
+}
+.col-sm {
+color: rgb(255, 255, 255);
+text-align: center;
+border-top: 1px solid rgb(255, 255, 255);
+}    
 /* Footer Container */
 .footer-container {
   display: flex;
@@ -434,9 +479,10 @@ input:focus {
   font-size: 20px;
 }
 #query{
-  width:40%;
+  width:30%;
   margin-left: 30%;
   background-color: #d1d4dc;
+  margin-top: 1%;
   border: #222;
   border-radius: 1rem;
   font-weight: 600;
@@ -554,4 +600,9 @@ right: 0;
   overflow-y: auto;
   width: 300px;
   z-index: 1000;
+}
+
+#out{
+  font-size: 35px;
+  
 }

@@ -19,16 +19,16 @@ function Cart({ cartItems, onClick, onRemove }) {
               <div key={item.id} className="electrons">
                 <h3>{item.name}</h3>
                 <img src={item.image_url} alt={`${item.name}'s avatar`} />
-                <p>Description: {item.description}</p>
-                <p>Price: {item.price_ksh}</p>
-                <p>Category: {item.category}</p>
-                <p>Condition: {item.condition}</p><br></br>
+                <p>Description: {item.description}</p><br></br>
+                <p><b>Price</b>: {item.price_ksh}</p><br></br>
+                <p><b>Category</b>: {item.category}</p><br></br>
+                <p><b>Condition</b>: {item.condition}</p><br></br>
                 <button onClick={() => handleRemoveClick(item)}>Remove</button>
               </div>
             ))}
           </ul>
           <button  id="checkout" onClick={handleCheckoutClick}>Checkout</button>
-          {total > 0 && <p> Total: price_ksh  {total} </p>}
+          {total > 0 && <p id="out"> Total: price_ksh  {total} </p>}
         </div>
       )}
     </div>

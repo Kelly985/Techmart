@@ -49,9 +49,9 @@ function ElectronicsList() {
       (selectedCategory === '' || item.category === selectedCategory)
   );
 
-  
+
   return (
-    <div>
+    <div className='panga'>
       <SearchBar onSearch={handleSearch} />
       <CategoryFilter
         categories={categories}
@@ -63,10 +63,10 @@ function ElectronicsList() {
         <div key={item.id} className="electrons">
           <h3>{item.name}</h3>
           <img src={item.image_url} alt={`${item.name}'s avatar`} />
-          <p>Description: {item.description}</p>
-          <p>Price: {item.price_ksh}</p>
-          <p>Category: {item.category}</p>
-          <p>Condition: {item.condition}</p>
+          <p>Description: {item.description}</p><br></br>
+          <p><b>Price</b>:Ksh {item.price_ksh}</p><br></br>
+          <p><b>Category</b>: {item.category}</p>{" "}
+          <p><b>Condition</b>: {item.condition}</p><br></br>
           <button onClick={() => addToCart(item)}>Add to Cart</button>
         </div>
       ))}
