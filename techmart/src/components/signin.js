@@ -36,20 +36,20 @@ function LoginPage() {
     }
   };
   return (
-    <div>
+    <div className="signup">
       <h1>Login Page</h1>
       <form onSubmit={handleLogin}>
         <div>
-          <label htmlFor="username">Username:</label>
+          <label id="name"htmlFor="username">Username:</label><br></br>
           <input
             type="text"
             id="username"
             value={username}
             onChange={handleUsernameChange}
-          />
+          /><br></br>
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
+          <label id="password"  htmlFor="password">Password:</label><br></br>
           <input
             type="password"
             id="password"
@@ -57,7 +57,7 @@ function LoginPage() {
             onChange={handlePasswordChange}
           />
         </div>
-        <button type="submit">Login</button>
+        <button id="login" type="submit">Login</button>
       </form>
       {errorMsg && <div>{errorMsg}</div>}
     </div>
