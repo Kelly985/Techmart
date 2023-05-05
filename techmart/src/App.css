@@ -606,3 +606,29 @@ right: 0;
   font-size: 35px;
 
 }
+
+#name,
+#email,
+#password{
+  font-size: 25px;
+
+}
+#signup,
+#login{
+  width: 90px;
+  height: 50px;
+  margin-left: 15%;
+  background-color: #404144;
+  font-size: 20px;
+  border-radius: 0.5rem;
+
+}
+.signup,
+.login{
+margin-left: 30%;
+}
+input{
+  width: 40%;
+  border: #000000;
+  background-color: #969daa;
+}

@@ -5,7 +5,7 @@ import Menu from "./components/menu"
 import Products from "./components/products"
 import Signin from "./components/signin"
 import Signup  from "./components/singup"
-import Footer from './Footer';
+import Footer from './components/Footer';
 import CategoryFilter from './components/Category';
 // import Sidebar from './components/SideBar';
 
