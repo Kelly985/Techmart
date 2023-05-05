@@ -69,7 +69,7 @@ h2{
 }
 
 .nav li{
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   color: #000000;
   text-decoration: none;
   float: right;
