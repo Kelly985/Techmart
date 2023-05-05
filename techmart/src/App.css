@@ -561,6 +561,11 @@ carousel:before {
   white-space: nowrap;
   background-color: wheat;
 }
+#out{
+  margin-left: 40%;
+  background-color: #61dafb;
+  border-radius: 0.5rem;
+}
 .carousel-item.active {
   color: #FF0000;
 }

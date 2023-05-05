@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import StripeCheckoutButton from './StripeCheckoutButton';
+
 function Cart({ cartItems, onClick, onRemove }) {
   const [total, setTotal] = useState(0);
   const handleRemoveClick = (item) => {
@@ -7,10 +9,18 @@ function Cart({ cartItems, onClick, onRemove }) {
   const handleCheckoutClick = () => {
     const totalPrice = cartItems.reduce((acc, item) => acc + item.price_ksh, 0);
     setTotal(totalPrice);
+    alert(`Total amount: KSH ${totalPrice}`);
+  };
+  const handlePaymentSuccess = (paymentMethod) => {
+    console.log(paymentMethod);
+    alert('Payment successful!');
+  };
+  const handlePaymentCancel = () => {
+    alert('Payment canceled!');
   };
   return (
     <div>
-      <button  id="cart1" onClick={onClick}>Cart ({cartItems.length})</button>
+      <button id="out"onClick={onClick}>Cart ({cartItems.length})</button>
       {cartItems.length > 0 && (
         <div>
           <h2>Cart</h2>
@@ -27,11 +37,16 @@ function Cart({ cartItems, onClick, onRemove }) {
               </div>
             ))}
           </ul>
-          <button  id="checkout" onClick={handleCheckoutClick}>Checkout</button>
-          {total > 0 && <p id="out"> Total: price_ksh  {total} </p>}
-        </div>
-      )}
-    </div>
-  );
+          <button id="out" onClick={handleCheckoutClick}>Checkout</button>
+          {total > 0 && (
+            <StripeCheckoutButton
+              amount={total * 100} // Amount should be in cents
+              onSuccess={handlePaymentSuccess}
+              onCancel={handlePaymentCancel} />
+)}
+</div>
+)}
+</div>
+);
 }
 export default Cart;
