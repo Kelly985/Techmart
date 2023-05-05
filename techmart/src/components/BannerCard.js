@@ -1,4 +1,7 @@
 import React from 'react';
+import "./bannercard.css"
+
+
 const BannerCard = () => {
   return (
     <div className="banner-card">
