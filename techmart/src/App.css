@@ -42,8 +42,6 @@ h1{
   font-display: center;
 }
 
-<<<<<<< HEAD
-=======
 h2{
   
   margin-left: 5%;
@@ -386,7 +384,7 @@ margin:auto
   position: fixed;
   top: 0;
   left: 0;
-  overflow-y: auto;/* footer styles */
+  overflow-y: auto;}/* footer styles */
 .footer {
   position: fixed;
   bottom: 0;
@@ -729,8 +727,3 @@ margin-left: 30%;
   border: #000000;
   background-color: #969daa;
  }
-
-
-
->>>>>>> origin/main
-
