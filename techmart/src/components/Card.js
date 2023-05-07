@@ -129,17 +129,9 @@ const Card = () => {
     </div>
   );
 };
+
 export default Card;
-// (14 kB)
-// https://ae01.alicdn.com/kf/Sa955813a32b84514822e1658122b9960Q/2023-Global-Version-I14-Pro-Max-Smartphone-16GB-1TB-Full-Screen-Mobile-Phone-7-3Inch-Cellphone.jpg_220x220xz.jpg_.webp
 
-// (16 kB)
-// https://ae01.alicdn.com/kf/S3fd907dc8b684fc8bad91652af24fcf7Q/Wireless-Headphones-Bluetooth-5-1-Earphones-HiFi-Sound-Headset-Waterproof-Noise-Reduction-Sports-Earbuds.jpg_220x220xz.jpg_.webp
 
-// (14 kB)
-// https://ae01.alicdn.com/kf/Sffb584ea20eb4a30b97b903d437f35499/HIFI-Headset-Wireless-Headphone-Bluetooth-Over-Ear-Stereo-Heavy-Bass-Game-Earphone-TF-AUX-Music-Player.jpg_220x220xz.jpg_.webp
 
-// (12 kB)
-// https://ae01.alicdn.com/kf/S06005709448646f0a87e81c1b664b8952/Warm-Heart-Flower-Phone-Case-For-OPPO-A54-A74-A57-A96-A76-A36-A95-A12-A15.jpg_220x220xz.jpg_.webp
 
-// (23 kB)

@@ -1,10 +1,11 @@
+import React, { useEffect, useState } from "react";
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"
-import Menu from "./components/menu"
-import Products from "./components/products"
-import Signin from "./components/signin"
-import Signup  from "./components/singup"
+import Navbar from "./Navbar";
+import Menu from "./components/menu";
+import Products from "./components/products";
+import Signin from "./components/signin";
+import Signup  from "./components/singup";
 import Footer from './components/Footer';
 import CategoryFilter from './components/Category';
 // import Sidebar from './components/SideBar';
@@ -15,6 +16,7 @@ import CategoryFilter from './components/Category';
 function App() {
   return (
     <Router>
+      {/* <SideBar /> */}~
       <Navbar />
       {/* <Sidebar /> */}
     
@@ -30,6 +32,8 @@ function App() {
       
       <Footer />
       
+      
+    
     </Router>
   );
 }
