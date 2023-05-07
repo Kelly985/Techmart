@@ -1,7 +1,7 @@
 import React from "react";
-import"./Loginform.css"
 
-const Signup = () => {
+
+const SignupForm = () => {
 
     
     return (
@@ -23,4 +23,4 @@ const Signup = () => {
             </div>
     )
     }
-export default Signup;
+export default SignupForm;
