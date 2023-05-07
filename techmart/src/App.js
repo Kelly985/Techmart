@@ -7,10 +7,12 @@ import signin from "./components/signin"
 import signup  from "./components/singup"
 import Footer from './Footer';
 import BannerCard from './BannerCard';
+// import SideBar from './SideBar';
 
 function App() {
   return (
     <Router>
+      {/* <SideBar /> */}~
       <Navbar />
       <BannerCard />
       <Routes>
