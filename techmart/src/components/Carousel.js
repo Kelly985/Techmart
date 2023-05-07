@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import './Carousel.css';
+import { Outlet } from "react-router-dom"
 
 const brandTexts = [
   'Huawei',
@@ -35,17 +35,14 @@ function Carousel() {
   const [offset, setOffset] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const intervalRef = useRef();
-
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       if (!isPaused) {
         setOffset(offset => (offset + 1) % brandTexts.length);
       }
     }, 3000);
-
     return () => clearInterval(intervalRef.current);
   }, [isPaused]);
-
   const handleMouseEnter = () => {
     setIsPaused(true);
     document.querySelector('.carousel-content').style.animationPlayState = 'paused';
@@ -54,7 +51,6 @@ function Carousel() {
     setIsPaused(false);
     document.querySelector('.carousel-content').style.animationPlayState = 'running';
   };
-
   return (
     <div className="carousel" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <nav className="carousel-nav">
@@ -78,12 +74,8 @@ function Carousel() {
           </div>
         ))}
       </div>
+      <Outlet />
     </div>
   );
 }
-
 export default Carousel;
-
-
-
-
